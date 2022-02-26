@@ -49,13 +49,13 @@ public class EditLead {
 		WebElement elementCreateLeadButton = driver.findElement(By.className("smallSubmit"));
 		elementCreateLeadButton.click();
 		
-		WebElement elementEditButton = driver.findElement(By.className("subMenuButton"));
+		WebElement elementEditButton = driver.findElement(By.linkText("Edit"));
 		elementEditButton.click();
 		
-		WebElement elementDescriptionClear = driver.findElement(By.id("createLeadForm_description"));
+		WebElement elementDescriptionClear = driver.findElement(By.id("updateLeadForm_description"));
 		elementDescriptionClear.clear();
 		
-		WebElement elementImportantNote = driver.findElement(By.id("createLeadForm_importantNote"));
+		WebElement elementImportantNote = driver.findElement(By.id("updateLeadForm_importantNote"));
 		elementImportantNote.sendKeys("Edited the page");
 		
 		WebElement elementUpdateButton = driver.findElement(By.className("smallSubmit"));
