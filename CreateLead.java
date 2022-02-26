@@ -45,7 +45,7 @@ public class CreateLead {
 		
 		WebElement elementStateProvince = driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId"));
 		Select dd = new Select(elementStateProvince);
-		dd.selectByVisibleText("NewYork");
+		dd.selectByVisibleText("New York");
 		
 		WebElement elementCreateLeadButton = driver.findElement(By.className("smallSubmit"));
 		elementCreateLeadButton.click();
