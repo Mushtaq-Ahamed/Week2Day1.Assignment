@@ -48,12 +48,12 @@ public class DuplicateLead {
 		Select dd = new Select(elementStateProvince);
 		dd.selectByVisibleText("New York");
 		
-		WebElement elementCreateLeadButton = driver.findElement(By.className("smallSubmit"));
-		elementCreateLeadButton.click();
+		WebElement elementCreateLeadButton1 = driver.findElement(By.className("smallSubmit"));
+		elementCreateLeadButton1.click();
 		
 		System.out.println("Title of Resulting Page is :" + driver.getTitle());
 		
-		WebElement elementDuplicateButton = driver.findElement(By.className("subMenuButton"));
+		WebElement elementDuplicateButton = driver.findElement(By.linkText("Duplicate Lead"));
 		elementDuplicateButton.click();
 		
 		WebElement elementCompanyNameClear = driver.findElement(By.id("createLeadForm_companyName"));
@@ -68,11 +68,10 @@ public class DuplicateLead {
 		WebElement elementRenameFirstName = driver.findElement(By.id("createLeadForm_firstName"));
 		elementRenameFirstName.sendKeys("KMR");
 		
-		WebElement elementDupCreateLeadButton = driver.findElement(By.className("smallSubmit"));
-		elementDupCreateLeadButton.click();
+		WebElement elementDupCreateLeadButton2 = driver.findElement(By.className("smallSubmit"));
+		elementDupCreateLeadButton2.click();
 		
 		System.out.println("Title of Resulting Page is :" + driver.getTitle());
-
 	}
 
 }
